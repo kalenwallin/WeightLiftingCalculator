@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeightLiftingCalculator.Views.HomePage"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:vm="clr-namespace:WeightLiftingCalculator.ViewModels"
+             Title="{Binding Title}"
+             BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#000000}">
+    <ContentPage.BindingContext>
+        <vm:HomeViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="theme_light_dark.png" Clicked="OnThemeButtonChange"/>
+    </ContentPage.ToolbarItems>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+                <Label Text="Hello there." FontSize="Title"/>
+                <Label Text="Try choosing a day and typing in a weight to calculate your amount at each percentage. Give it a try!" FontSize="16" Padding="0,0,0,0"/>
+                <Picker x:Name="DayPicker" Title="Pick a Day" SelectedIndexChanged="OnPickerSelectedIndexChanged" TitleColor="{AppThemeBinding Light=#808080, Dark=#E5E5E0}" TextColor="{AppThemeBinding Light=#000000, Dark=#FFFFFF}">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Tuesday</x:String>
+                            <x:String>Wednesday</x:String>
+                            <x:String>Friday</x:String>
+                            <x:String>Saturday</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Entry Placeholder="Enter Weight"
+                       PlaceholderColor="{AppThemeBinding Light=#808080, Dark=#E5E5E0}"
+                       TextColor="{AppThemeBinding Light=#000000, Dark=#FFFFFF}"
+                       ReturnType="Send"
+                       Keyboard="Numeric"
+                       ClearButtonVisibility="WhileEditing"
+                       Completed="OnEntryCompleted"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
