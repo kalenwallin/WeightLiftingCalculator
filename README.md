@@ -10,4 +10,5 @@ I created this app using the IDE Visual Studio. I used Xamarin Forms which is a 
 If you have any questions or bugs you would like to report to me, please let me know at kalenwallin1@gmail.com
 
 # Screenshots
+<img src="https://github.com/kalenwallin/WeightLiftingCalculator/blob/main/Screenshots/LightHome.jpg" width=20% height=20%> <img src="https://github.com/kalenwallin/WeightLiftingCalculator/blob/main/Screenshots/PickADay.jpg" width=20% height=20%> <img src="https://github.com/kalenwallin/WeightLiftingCalculator/blob/main/Screenshots/DataEntryHome.jpg" width=20% height=20%> <img src="https://github.com/kalenwallin/WeightLiftingCalculator/blob/main/Screenshots/Tuesday.jpg" width=20% height=20%> <img src="https://github.com/kalenwallin/WeightLiftingCalculator/blob/main/Screenshots/DarkHome.jpg" width=20% height=20%> <img src="https://github.com/kalenwallin/WeightLiftingCalculator/blob/main/Screenshots/DarkTuesday.jpg" width=20% height=20%> 
 
