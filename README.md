@@ -8,3 +8,6 @@ On monday, you will record your 3 rep max in a notebook or notes app. Every work
 I created this app using the IDE Visual Studio. I used Xamarin Forms which is a part of the  .NET Framework. I created this to use on my Samsung galaxy note 9, but it should also work for any other android device and iOS device. I've tested on a pixel 2 emulator and it looks good. I have not tested on any other devices, therefore it is up to you to test it and get back to me.
 
 If you have any questions or bugs you would like to report to me, please let me know at kalenwallin1@gmail.com
+
+# Screenshots
+
